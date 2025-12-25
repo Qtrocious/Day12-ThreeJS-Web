@@ -14,14 +14,14 @@ renderer.setAnimationLoop( animate );
 renderer.render( scene, camera );
 
 const geometry = new THREE.BoxGeometry(1, 1, 1);
-const texture = new THREE.TextureLoader().load('public/giggle.png');
+const texture = new THREE.TextureLoader().load('giggle.png');
 const material = new THREE.MeshBasicMaterial( { map: texture } );
 const cube = new THREE.Mesh( geometry, material );
 
 scene.add( cube );
 
 const donut_geo = new THREE.TorusGeometry( 10, 3, 16, 100 );
-const donut_texture = new THREE.TextureLoader().load('public/life-dexter-morgan-reaction-v0-20wetwv0nvpd1.png');
+const donut_texture = new THREE.TextureLoader().load('life-dexter-morgan-reaction-v0-20wetwv0nvpd1.png');
 const donut_material = new THREE.MeshBasicMaterial( { map: donut_texture } );
 const donut = new THREE.Mesh( donut_geo, donut_material );
 
